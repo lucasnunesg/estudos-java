@@ -1,4 +1,4 @@
-package org.example;
+package org.schoolMgmt;
 
 import java.util.ArrayList;
 

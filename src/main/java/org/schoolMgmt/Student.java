@@ -1,4 +1,4 @@
-package org.example;
+package org.schoolMgmt;
 
 public class Student{
     String name;
