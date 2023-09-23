@@ -6,12 +6,15 @@ public class Department {
     String name;
     ArrayList<Student> students;
 
-    /* Entender o motivo do array list estar contaminado, para funcionar precisamos inicializar o arraylist na função main*/
     Department (String name) {
         this.name = name;
         this.students = new ArrayList<>();
     }
 
+    @Override
+    public String toString() {
+        return "Department name : " + name + '\'';
+    }
 
     void AddStudent(Student student) {
         students.add(student);

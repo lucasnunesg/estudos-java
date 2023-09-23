@@ -18,22 +18,20 @@ public class Main {
         Department physicsDept = new Department("Physics");
         Department mathDept = new Department("Mathematics");
 
-        //physicsDept.students.add(a1); DELETAR ESSA LINHA
-        //mathDept.students.add(a2); //DELETAR ESSA LINHA
-        //noinspection MismatchedQueryAndUpdateOfCollection
-        /*ArrayList<Student> students = new ArrayList<>(); TIRAR COMENTÁRIO DESSAS LINHAS
-        students.add(a1);
-        students.add(a2);*/
-
-
-
-        physicsDept.AddStudent(a1); //DELETAR ESSA LINHA
-        physicsDept.AddStudent(a2); //DELETAR ESSA LINHA
+        physicsDept.AddStudent(a1);
+        physicsDept.AddStudent(a2);
 
         mathDept.AddStudent(a1);
 
         physicsDept.departmentDetails();
         mathDept.departmentDetails();
+
+        School s1 = new School("Scranton High", "Scranton-PA");
+
+        s1.AddDept(physicsDept);
+        s1.AddDept(mathDept);
+
+        s1.ShowDept();
 
 
     }
