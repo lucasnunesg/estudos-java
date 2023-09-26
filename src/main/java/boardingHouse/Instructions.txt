@@ -1,3 +1,4 @@
+Main goal of this exercise = working with Vectors
 The owner of a Boarding House has ten rooms to be rented by students (each room identified by a number from 0 to 10).
 
 Write a program that initializes all rooms as if they are empty and then read a number (N) representing the amount of
