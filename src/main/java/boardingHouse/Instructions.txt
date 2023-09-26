@@ -1,0 +1,29 @@
+The owner of a Boarding House has ten rooms to be rented by students (each room identified by a number from 0 to 10).
+
+Write a program that initializes all rooms as if they are empty and then read a number (N) representing the amount of
+students that will rent the rooms (N can be any number from 1 to 10). Then, register the rent from all students. For
+each rent registry, inform the student's name and email as well as the desired room number. Always assume the desired
+room to be empty. At the end, your program should print a report from all rooms of the boarding house, by room order, as
+the following example:
+
+How many rooms will be rented? 3
+
+Rent #1
+Name: Maria Green
+Email: maria@gmail.com
+Room: 5
+
+Rent #2
+Name: Marco Blue
+Email: marco@gmail.com
+Room: 1
+
+Rent #3
+Name: Alex Brown
+Email: alex@gmail.com
+Room: 8
+
+Busy rooms:
+1: Marco Blue, marco@gmail.com
+2: Maria Green, maria@gmail.com
+3: Alex Brown, alex@gmail.com
