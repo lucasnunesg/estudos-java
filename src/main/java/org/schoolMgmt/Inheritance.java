@@ -14,6 +14,14 @@ public class Inheritance {
                 this.name = name;
             }
 
+            public int getAge() {
+                return age;
+            }
+
+            public String getName() {
+                return name;
+            }
+
             public void show() {
                 System.out.println(name + " is " + age + " years old");
             }
