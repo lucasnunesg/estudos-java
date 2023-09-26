@@ -27,10 +27,13 @@ public class Account {
         this.accountHolder = accountHolder;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void deposit(double amount) {
+        balance += amount;
     }
 
+    public void withdraw(double amount) {
+        balance -= amount + 5;
+    }
     @Override
     public String toString() {
         return String.format("Account data:\nAccount: %d, Holder: %s, Balance: $ %.2f", accountNumber, accountHolder, balance);

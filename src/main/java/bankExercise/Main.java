@@ -26,12 +26,12 @@ public class Main {
 
         System.out.print("Enter a deposit value: ");
         double newDeposit = sc.nextDouble();
-        account.setBalance(account.getBalance() + newDeposit);
+        account.deposit(newDeposit);
         System.out.println(account);
 
         System.out.print("Enter a withdraw value: ");
         double withdraw = sc.nextDouble();
-        account.setBalance(account.getBalance() - withdraw);
+        account.withdraw(withdraw);
         System.out.println(account);
         sc.close();
 
