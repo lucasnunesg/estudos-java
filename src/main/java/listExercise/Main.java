@@ -4,14 +4,6 @@ import java.util.*;
 
 public class Main {
 
-    public static boolean hasId(int id, ArrayList<Employee> list) {
-        List<Integer> idList = new ArrayList<>();
-        for (Employee emp : list) {
-            idList.add(emp.getId());
-        }
-        return idList.contains(id);
-    }
-
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -31,11 +23,7 @@ public class Main {
         }
         System.out.print("Enter employee ID that will have salary increase: ");
         int idRaise = sc.nextInt();
-        /*
-            - Validar se o ID existe;
-            - Acessar a lista com base no ID;
-            - Utilizar o método raise para aumentar o salário do funcionário com o ID fornecido.
-         */
+
         Employee emp = employeeList.stream().filter(x -> x.getId() == idRaise).findFirst().orElse(null);
 
         if (emp == null) {
@@ -46,8 +34,8 @@ public class Main {
             emp.raise(percentage);
         }
         System.out.println("List of employees:");
-        for (Employee emp: employeeList) {
-            System.out.println(emp);
+        for (Employee x: employeeList) {
+            System.out.println(x);
         }
         sc.close();
     }
