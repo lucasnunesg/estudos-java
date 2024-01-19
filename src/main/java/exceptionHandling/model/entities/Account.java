@@ -10,9 +10,7 @@ public class Account {
     private Double balance;
     private Double withdrawLimit;
 
-    public Account(){
-
-    };
+    public Account(){}
 
     public Account(int number, String holder, Double balance, Double withdrawLimit) {
         this.number = number;
@@ -54,8 +52,6 @@ public class Account {
     }
 
     public void withdraw (Double amount) {
-
-
         if (amount > this.getWithdrawLimit()) {
             throw new WithdrawErrorException("The amount exceeds withdraw limit.");
         } else if (amount > this.getBalance()) {
