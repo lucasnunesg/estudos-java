@@ -1,4 +1,4 @@
-package boardingHouse;
+package basicClass2;
 
 public class Room {
     private String name;

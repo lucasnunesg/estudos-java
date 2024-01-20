@@ -1,4 +1,4 @@
-package bankExercise;
+package basicClass1;
 
 import java.util.Scanner;
 import java.util.Locale;

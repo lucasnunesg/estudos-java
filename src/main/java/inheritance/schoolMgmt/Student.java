@@ -1,4 +1,4 @@
-package org.schoolMgmt;
+package inheritance.schoolMgmt;
 
 public class Student{
     String name;

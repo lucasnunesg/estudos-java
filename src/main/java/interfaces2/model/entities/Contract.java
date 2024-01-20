@@ -40,11 +40,9 @@ public class Contract {
           this.totalValue = totalValue;
      }
 
-     public ArrayList<Installment> getInstallments() {
+     public List<Installment> getInstallments() {
           return installments;
      }
 
-     public void setInstallments(ArrayList<Installment> installments) {
-          this.installments = installments;
-     }
+
 }
