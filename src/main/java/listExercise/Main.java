@@ -1,6 +1,8 @@
 package listExercise;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -10,7 +12,7 @@ public class Main {
         ArrayList<Employee> employeeList = new ArrayList<>();
         System.out.print("How many employees will be registered? ");
         int n = sc.nextInt();
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.printf("Employee #%d:%n", i);
             System.out.print("Id: ");
             int id = sc.nextInt();
@@ -34,7 +36,7 @@ public class Main {
             emp.raise(percentage);
         }
         System.out.println("List of employees:");
-        for (Employee x: employeeList) {
+        for (Employee x : employeeList) {
             System.out.println(x);
         }
         sc.close();
